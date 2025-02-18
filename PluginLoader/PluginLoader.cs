@@ -1,5 +1,4 @@
 ﻿using Common;
-using CSScriptLibrary;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,11 +15,9 @@ namespace PluginLoader
         public void LoadAndRun(string dllPath)
         {
             Assembly assembly = Assembly.LoadFrom(dllPath);
-            using (var helper = new AsmHelper(assembly))
-            {
-                IApp app = helper.CreateObject("Core.App") as IApp;
-                app.Run();
-            }
+            Type pluginType = assembly.GetType("Core.App");
+            IApp instance = Activator.CreateInstance(pluginType) as IApp;
+            instance.Run();
         }
     }
 }

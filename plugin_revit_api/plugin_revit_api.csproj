@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CSScriptLibrary, Version=3.30.5.1, Culture=neutral, PublicKeyToken=70fcc3d18c749033, processorArchitecture=MSIL">
-      <HintPath>..\packages\CS-Script.lib.3.30.5.1\lib\net45\CSScriptLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="RevitAPI">
       <HintPath>..\..\..\..\..\..\ProgramData\Autodesk\Revit\Addins\2024\Polbase\bin\RevitAPI.dll</HintPath>
     </Reference>
@@ -54,9 +51,6 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
