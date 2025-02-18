@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace Core
 {
+    //plugin
     public class App: IApp
     {
         public void Run()

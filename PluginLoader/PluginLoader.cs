@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace PluginLoader
 {
+    //plugin load and execute
     public class PluginLoader : MarshalByRefObject
     {
         public void LoadAndRun(string dllPath)

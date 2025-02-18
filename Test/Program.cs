@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Test
 {
+    //Tu sprawdzamy czy działa nasz kod json poza revitem
     internal class Program
     {
         static void Main(string[] args)
